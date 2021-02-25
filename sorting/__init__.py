@@ -1,7 +1,18 @@
 # квадратичные сортировки - время затраченное на обработку O(N^2)
 # К квадратичным относятся: сортировка вставкой (insert sort), выбора (chose sort), пузырьковая (babble sort)
 
-class Array:
-    def __init__(self):
-        # TODO: implement own array (no list in Python)
-        pass
+class ListNode:
+    """Node for single linked list"""
+    def __init__(self, value=0, nxt=None, head=False):
+        self.value = value
+        self.next = nxt
+        self.head = self if head else head
+
+    def __str__(self):
+        return f'Class {self.__class__.__name__} contain {vars(self)}.'
+
+
+if __name__ == '__main__':
+    arr = ListNode(555, ListNode(10), head=True)
+    print(arr)
+
