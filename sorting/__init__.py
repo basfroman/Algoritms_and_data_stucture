@@ -3,9 +3,9 @@
 
 class ListNode:
     """Node for single linked list"""
-    def __init__(self, value=0, nxt=None, head=False):
+    def __init__(self, value=0, next_node=None, head=False):
         self.value = value
-        self.next = nxt
+        self.next = next_node
         self.head = self if head else head
 
     def __str__(self):
