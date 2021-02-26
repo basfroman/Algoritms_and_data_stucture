@@ -1,6 +1,7 @@
 # квадратичные сортировки - время затраченное на обработку O(N^2)
 # К квадратичным относятся: сортировка вставкой (insert sort), выбора (chose sort), пузырьковая (babble sort)
 
+
 class ListNode:
     """Node for single linked list"""
     def __init__(self, value=0, next_node=None, head=False):
